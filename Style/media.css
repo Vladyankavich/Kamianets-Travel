@@ -1,0 +1,11 @@
+@media (hover: hover) {
+    .close_button {
+        transition: transform 1s cubic-bezier(.5,0,0,1);
+    }
+}
+
+@media (max-width: 1300px) {
+    .navigation {
+        width: 35%;
+    }
+}
