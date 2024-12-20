@@ -1,5 +1,5 @@
 export class HTMLObject {
     create() {
-        return "";
+        return new HTMLElement();
     }
 }

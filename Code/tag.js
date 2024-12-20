@@ -15,8 +15,6 @@ export class Tag extends HTMLObject {
             if(attribute.type === type) {
                 attribute.setValue(value);
                 status = true;
-
-                return;
             }
         });
 
@@ -26,8 +24,16 @@ export class Tag extends HTMLObject {
         }
     }
 
+    setId(value) {
+        this.setAttribute("id", value);
+
+        return this;
+    }
+
     setClass(value) {
         this.setAttribute("class", value);
+
+        return this;
     }
 
     processAttribute(element) {
@@ -46,6 +52,14 @@ export class Tag extends HTMLObject {
 
     addChild(object) {
         this.children.push(object);
+
+        return this;
+    }
+
+    addChildren(objects) {
+        objects.forEach(object => {
+            this.children.push(object);
+        })
 
         return this;
     }

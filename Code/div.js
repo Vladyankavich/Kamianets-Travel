@@ -8,6 +8,8 @@ export class Div extends Tag {
 
     setText(value) {
         this.text = value;
+
+        return this;
     }
 
     create() {

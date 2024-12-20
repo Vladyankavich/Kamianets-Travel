@@ -6,6 +6,8 @@ import { Header } from "./header.js";
 import { Logo } from "./logo.js";
 import { Main } from "./main.js";
 import { MainMenu } from "./main-menu.js";
+import {Title} from "./title.js";
+import {Prologue} from "./prologue.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector("body");
@@ -17,11 +19,13 @@ window.addEventListener("DOMContentLoaded", () => {
     const audioplayer = new Audioplayer();
     const border = new Border();
     const main = new Main();
+    const title = new Title();
+    const prologue = new Prologue();
     
     headerDiv.setClass("header");
-    // navigation.setClass("navigation nav--visible");
     headerDiv.addChild(mainMenu).addChild(burgerMenu).addChild(logo).addChild(audioplayer);
-    header.addChild(headerDiv); 
+    header.addChild(headerDiv);
+    main.addChild(title).addChild(prologue);
 
     body.append(header.create(), border.create(), main.create());
 });
