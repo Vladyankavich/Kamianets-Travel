@@ -1,4 +1,4 @@
-import { HTMLObject } from "./html-obgect.js";
+import { HTMLObject } from "./html-object.js";
 import { Image } from "./image.js";
 import { Div } from "./div.js";
 import { Span } from "./span.js";

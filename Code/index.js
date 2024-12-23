@@ -1,13 +1,14 @@
-import { Audioplayer } from "./audio-player.js";
-import { Border } from "./border.js";
-import { BurgerMenu } from "./burger-menu.js";
-import { Div } from "./div.js";
-import { Header } from "./header.js";
-import { Logo } from "./logo.js";
-import { Main } from "./main.js";
-import { MainMenu } from "./main-menu.js";
+import {Audioplayer} from "./audio-player.js";
+import {Border} from "./border.js";
+import {BurgerMenu} from "./burger-menu.js";
+import {Div} from "./div.js";
+import {Header} from "./header.js";
+import {Logo} from "./logo.js";
+import {Main} from "./main.js";
+import {MainMenu} from "./main-menu.js";
 import {Title} from "./title.js";
 import {Prologue} from "./prologue.js";
+import {InterestingPlaces} from "./interesting-places.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector("body");
@@ -21,11 +22,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const main = new Main();
     const title = new Title();
     const prologue = new Prologue();
+    const interestingPlaces = new InterestingPlaces();
     
     headerDiv.setClass("header");
     headerDiv.addChild(mainMenu).addChild(burgerMenu).addChild(logo).addChild(audioplayer);
     header.addChild(headerDiv);
-    main.addChild(title).addChild(prologue);
+    main.addChild(title).addChild(prologue).addChild(interestingPlaces);
 
     body.append(header.create(), border.create(), main.create());
 });

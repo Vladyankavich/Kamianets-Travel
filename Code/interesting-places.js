@@ -5,13 +5,19 @@ import {Heading, HeadingType} from "./heading.js";
 import {Image} from "./image.js";
 import {Link} from "./link.js";
 import {Paragraph} from "./paragraph.js";
-import {CITY_CHAPTER_DATA, IMAGE_POSITION_LEFT, IMAGE_POSITION_RIGHT} from "./chapters-data.js";
+import {
+    IMAGE_POSITION_LEFT,
+    IMAGE_POSITION_RIGHT,
+    IMAGE_SIZE_BIG,
+    IMAGE_SIZE_SMALL,
+    INTERESTING_PLACES_CHAPTER_DATA
+} from "./chapters-data.js";
 
-export class Prologue extends HTMLObject {
-    getDescriptionsAboutKamenets() {
+export class InterestingPlaces extends HTMLObject {
+    getDescriptionsAboutInterestingPlaces() {
         const descriptions = [];
 
-        CITY_CHAPTER_DATA.forEach(chapterData => {
+        INTERESTING_PLACES_CHAPTER_DATA.forEach(chapterData => {
             let indent = false;
 
             chapterData.descriptions.forEach(description => {
@@ -27,7 +33,17 @@ export class Prologue extends HTMLObject {
                     link.setClass("blue_link").setText(chapterData.title);
 
                     const image = new Image(chapterData.image, chapterData.title);
-                    image.setClass("image_big");
+
+                    switch (chapterData.imageSize) {
+                        case IMAGE_SIZE_BIG: {
+                            image.setClass("image_big");
+                            break;
+                        }
+                        case IMAGE_SIZE_SMALL: {
+                            image.setClass("image_small");
+                            break;
+                        }
+                    }
 
                     switch (chapterData.imagePosition) {
                         case IMAGE_POSITION_LEFT: {
@@ -53,12 +69,12 @@ export class Prologue extends HTMLObject {
     }
 
     create() {
-        const heading = new Heading(HeadingType.H2, "Кам’янець-Подільський");
+        const heading = new Heading(HeadingType.H2, "Цікаві місця");
         heading.setClass("h_name");
 
         const section = new Section();
-        section.setId("section_prologue").addChild(heading);
-        section.addChildren(this.getDescriptionsAboutKamenets());
+        section.setId("section_interesting_places").addChild(heading);
+        section.addChildren(this.getDescriptionsAboutInterestingPlaces());
 
         return section.create();
     }

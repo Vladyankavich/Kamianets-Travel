@@ -9,3 +9,40 @@
         width: 35%;
     }
 }
+
+@media (max-width: 1200px) {
+    .background {
+        width: 88%;
+        height: 54rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .background {
+        height: 52rem;
+    }
+}
+
+@media (max-width: 1135px) {
+    .background {
+        height: 50rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .background {
+        height: 46rem;
+    }
+
+    .background h2 {
+        margin-top: 24rem;
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    #section_prologue {
+        padding-top: 10rem;
+    }
+}
+

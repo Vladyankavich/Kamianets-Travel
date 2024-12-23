@@ -1,4 +1,4 @@
-import { HTMLObject } from "./html-obgect.js";
+import { HTMLObject } from "./html-object.js";
 import { Attribute } from "./attribute.js";
 
 export class Tag extends HTMLObject {

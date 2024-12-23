@@ -1,4 +1,4 @@
-import { HTMLObject } from "./html-obgect.js";
+import { HTMLObject } from "./html-object.js";
 import { Div } from "./div.js";
 
 export class Border extends HTMLObject{

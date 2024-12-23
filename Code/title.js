@@ -1,7 +1,7 @@
 import { Div } from "./div.js";
 import {Section} from "./section.js";
 import {Heading, HeadingType} from "./heading.js";
-import {HTMLObject} from "./html-obgect.js";
+import {HTMLObject} from "./html-object.js";
 
 export class Title extends HTMLObject {
     create() {

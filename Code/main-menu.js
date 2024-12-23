@@ -1,9 +1,9 @@
-import { HTMLObject } from "./html-obgect.js";
-import { Div } from "./div.js";
-import { Button } from "./button.js";
-import { Span } from "./span.js";
-import { Link } from "./link.js";
-import { Navigation } from "./navigation.js";
+import {HTMLObject} from "./html-object.js";
+import {Div} from "./div.js";
+import {Button} from "./button.js";
+import {Span} from "./span.js";
+import {Link} from "./link.js";
+import {Navigation} from "./navigation.js";
 
 export class MainMenu extends HTMLObject {
     create() {

@@ -1,4 +1,4 @@
-import { HTMLObject } from "./html-obgect.js";
+import { HTMLObject } from "./html-object.js";
 import { Image } from "./image.js";
 import { Button } from "./button.js";
 
