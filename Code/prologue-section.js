@@ -7,7 +7,7 @@ import {Link} from "./link.js";
 import {Paragraph} from "./paragraph.js";
 import {CITY_CHAPTER_DATA, IMAGE_POSITION_LEFT, IMAGE_POSITION_RIGHT} from "./chapters-data.js";
 
-export class Prologue extends HTMLObject {
+export class PrologueSection extends HTMLObject {
     getDescriptionsAboutKamenets() {
         const descriptions = [];
 

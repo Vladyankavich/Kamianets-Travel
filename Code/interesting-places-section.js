@@ -13,7 +13,7 @@ import {
     INTERESTING_PLACES_CHAPTER_DATA
 } from "./chapters-data.js";
 
-export class InterestingPlaces extends HTMLObject {
+export class InterestingPlacesSection extends HTMLObject {
     getDescriptionsAboutInterestingPlaces() {
         const descriptions = [];
 

@@ -7,8 +7,11 @@ import {Logo} from "./logo.js";
 import {Main} from "./main.js";
 import {MainMenu} from "./main-menu.js";
 import {Title} from "./title.js";
-import {Prologue} from "./prologue.js";
-import {InterestingPlaces} from "./interesting-places.js";
+import {PrologueSection} from "./prologue-section.js";
+import {InterestingPlacesSection} from "./interesting-places-section.js";
+import {HostelsSection} from "./hotels-section.js";
+import {RestaurantsSection} from "./restaurants-section.js";
+import {KafeBarsSection} from "./kafe-bars-section.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector("body");
@@ -21,13 +24,17 @@ window.addEventListener("DOMContentLoaded", () => {
     const border = new Border();
     const main = new Main();
     const title = new Title();
-    const prologue = new Prologue();
-    const interestingPlaces = new InterestingPlaces();
+    const prologueSection = new PrologueSection();
+    const interestingPlacesSection = new InterestingPlacesSection();
+    const hotelsSection = new HostelsSection();
+    const restaurantsSection = new RestaurantsSection();
+    const кafeBarsSection = new KafeBarsSection();
     
     headerDiv.setClass("header");
     headerDiv.addChild(mainMenu).addChild(burgerMenu).addChild(logo).addChild(audioplayer);
     header.addChild(headerDiv);
-    main.addChild(title).addChild(prologue).addChild(interestingPlaces);
+    main.addChild(title).addChild(prologueSection).addChild(interestingPlacesSection);
+    main.addChild(hotelsSection).addChild(restaurantsSection).addChild(кafeBarsSection);
 
     body.append(header.create(), border.create(), main.create());
 });
