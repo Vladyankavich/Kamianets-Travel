@@ -24,7 +24,7 @@ export const CITY_CHAPTER_DATA = [
 export const INTERESTING_PLACES_CHAPTER_DATA = [
     {
         title: "Кам’янець-Подільська фортеця",
-        image: "./Image/castle-removebg-preview.png",
+        image: "./Image/Interesting_places/castle-removebg-preview.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Кам%27янець-Подільська_фортеця",
@@ -34,7 +34,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Кафедральний костел святих Апостолів Петра і Павла",
-        image: "./Image/cathedral.png",
+        image: "./Image/Interesting_places/cathedral.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Кафедральний_костел_святих_апостолів_Петра_і_Павла_(Кам%27янець-Подільський)",
@@ -44,7 +44,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Костел Святого Миколая і монастир домініканців",
-        image: "./Image/St._Nicholas_Church.png",
+        image: "./Image/Interesting_places/St._Nicholas_Church.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Костел_Святого_Миколая_та_монастир_домініканців_(Кам%27янець-Подільський)",
@@ -55,7 +55,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Хрестовоздви́женська це́рква",
-        image: "./Image/church.png",
+        image: "./Image/Interesting_places/church.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Хрестовоздвиженська_церква_(Кам%27янець-Подільський)",
@@ -65,7 +65,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Дзвіни́ця свято́го Степа́носа",
-        image: "./Image/bell_tower.png",
+        image: "./Image/Interesting_places/bell_tower.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Дзвіниця_святого_Степаноса",
@@ -76,7 +76,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Ба́шта Стефа́на Бато́рія",
-        image: "./Image/tower.png",
+        image: "./Image/Interesting_places/tower.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Башта_Стефана_Баторія_(Кам%27янець-Подільський)",
@@ -87,7 +87,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Буди́нок по́льського магістра́ту",
-        image: "./Image/Town_Hall.png",
+        image: "./Image/Interesting_places/Town_Hall.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_SMALL,
         link: "https://uk.wikipedia.org/wiki/Будинок_польського_магістрату",
@@ -97,7 +97,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Вірменська криниця",
-        image: "./Image/Armenian_well.png",
+        image: "./Image/Interesting_places/Armenian_well.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Вірменська_криниця",
@@ -109,7 +109,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Церква священомучика Йосафата",
-        image: "./Image/Trinity_Church.png",
+        image: "./Image/Interesting_places/Trinity_Church.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Церква_святого_Йосафата_(Кам%27янець-Подільський)",
@@ -121,7 +121,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Храм Пресвятої Трійці",
-        image: "./Image/Holy_Trinity_Church.png",
+        image: "./Image/Interesting_places/Holy_Trinity_Church.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Храм_Пресвятої_Трійці_(Кам%27янець-Подільський)",
@@ -133,7 +133,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Тріумфальна арка",
-        image: "./Image/Triumphal_Arch.png",
+        image: "./Image/Interesting_places/Triumphal_Arch.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_SMALL,
         link: "https://uk.wikipedia.org/wiki/Тріумфальна_арка_(Кам%27янець-Подільський)",
@@ -143,7 +143,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Церква св. ап. Петра і Павла",
-        image: "./Image/church_saints.png",
+        image: "./Image/Interesting_places/church_saints.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Церква_святих_апостолів_Петра_і_Павла_(Кам%27янець-Подільський)",
@@ -154,7 +154,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Туре́цький бастіо́н",
-        image: "./Image/Turkish_bastion.png",
+        image: "./Image/Interesting_places/Turkish_bastion.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Турецький_бастіон",
@@ -168,7 +168,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Руська брама",
-        image: "./Image/Russian_gate.png",
+        image: "./Image/Interesting_places/Russian_gate.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Руська_брама_(Кам%27янець-Подільський)",
@@ -179,7 +179,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Польська брама",
-        image: "./Image/Polish_gate.png",
+        image: "./Image/Interesting_places/Polish_gate.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://uk.wikipedia.org/wiki/Нижня_Польська_брама",
@@ -190,7 +190,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Гончарська башта",
-        image: "./Image/potter's_tower.png",
+        image: "./Image/Interesting_places/potter's_tower.png",
         imagePosition: IMAGE_POSITION_LEFT,
         imageSize: IMAGE_SIZE_SMALL,
         link: "https://uk.wikipedia.org/wiki/Гончарська_башта",
@@ -201,7 +201,7 @@ export const INTERESTING_PLACES_CHAPTER_DATA = [
     },
     {
         title: "Сквер «Лебедине озеро»",
-        image: "./Image/Swan_Lake.png",
+        image: "./Image/Interesting_places/Swan_Lake.png",
         imagePosition: IMAGE_POSITION_RIGHT,
         imageSize: IMAGE_SIZE_BIG,
         link: "https://rest.guru.ua/ua/kamenec_podolskiy/places/2419-skver_lebedinoe_ozero/",
@@ -400,7 +400,7 @@ export const RESTAURANTS_CHAPTER_DATA  = [
     }
 ]
 
-export const KAFE_BARS_CHAPTER_DATA  = [
+export const CAFE_BARS_CHAPTER_DATA  = [
     {
         title: "Кав’ярня-кондитерська 'MADAM BUSHE'",
         image: "./Image/Kafe_Bar/Madam_Bushe.jpg",

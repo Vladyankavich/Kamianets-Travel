@@ -10,7 +10,7 @@ export class BurgerMenu extends HTMLObject {
         span.setText("Menu");
         span.setClass("header__label");
 
-        const image = new Image("./Image/burger-menu.png", "burger-menu");
+        const image = new Image("./Image/Logo/burger-menu.png", "burger-menu");
 
         const div = new Div();
         div.setClass("header_burger");

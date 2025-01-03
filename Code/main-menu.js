@@ -34,27 +34,27 @@ export class MainMenu extends HTMLObject {
         navigationMain.setClass("navigation_main");
 
         const button_1 = new Button();
-        const link_1 = new Link("#");
+        const link_1 = new Link("#section_prologue");
         link_1.setText("Про Кам’янець");
         button_1.addChild(link_1);
 
         const button_2 = new Button();
-        const link_2 = new Link("#");
+        const link_2 = new Link("#section_interesting_places");
         link_2.setText("Цікаві місця");
         button_2.addChild(link_2);
 
         const button_3 = new Button();
-        const link_3 = new Link("#");
+        const link_3 = new Link("#section_hotels");
         link_3.setText("Готелі");
         button_3.addChild(link_3);
 
         const button_4 = new Button();
-        const link_4 = new Link("#");
+        const link_4 = new Link("#section_restaurants");
         link_4.setText("Ресторани");
         button_4.addChild(link_4);
 
         const button_5 = new Button();
-        const link_5 = new Link("#");
+        const link_5 = new Link("#section_сafe_bars");
         link_5.setText("Кафе та бари");
         button_5.addChild(link_5);
 

@@ -4,32 +4,32 @@ import {Section} from "./section.js";
 import {Heading, HeadingType} from "./heading.js";
 import {Image} from "./image.js";
 import {Paragraph} from "./paragraph.js";
-import {KAFE_BARS_CHAPTER_DATA} from "./chapters-data.js";
+import {CAFE_BARS_CHAPTER_DATA} from "./chapters-data.js";
 
-export class KafeBarsSection extends HTMLObject {
-    getDescriptionsAboutKafeBars() {
+export class CafeBarsSection extends HTMLObject {
+    getDescriptionsAboutCafeBars() {
         const descriptions = [];
 
-        KAFE_BARS_CHAPTER_DATA.forEach(chapterData => {
+        CAFE_BARS_CHAPTER_DATA.forEach(chapterData => {
             // let indent = false;
             const div = new Div();
-            div.setClass("kafe_bar");
+            div.setClass("сafe_bar");
 
             const image = new Image(chapterData.image, chapterData.title);
-            image.setClass("kafe_bar_image");
+            image.setClass("сafe_bar_image");
 
             const heading = new Heading(HeadingType.H3, chapterData.title);
-            const kafeBarDescription = new Div();
-            kafeBarDescription.setClass("kafe_bar_description");
-            kafeBarDescription.addChild(heading);
+            const cafeBarDescription = new Div();
+            cafeBarDescription.setClass("сafe_bar_description");
+            cafeBarDescription.addChild(heading);
 
             chapterData.descriptions.forEach(description => {
                 const paragraph = new Paragraph(description);
 
-                kafeBarDescription.addChild(paragraph);
+                cafeBarDescription.addChild(paragraph);
             });
 
-            div.addChild(image).addChild(kafeBarDescription);
+            div.addChild(image).addChild(cafeBarDescription);
             descriptions.push(div);
         });
 
@@ -41,8 +41,8 @@ export class KafeBarsSection extends HTMLObject {
         heading.setClass("h_name");
 
         const section = new Section();
-        section.setId("section_kafe_bars").addChild(heading);
-        section.addChildren(this.getDescriptionsAboutKafeBars());
+        section.setId("section_сafe_bars").addChild(heading);
+        section.addChildren(this.getDescriptionsAboutCafeBars());
 
         return section.create();
     }

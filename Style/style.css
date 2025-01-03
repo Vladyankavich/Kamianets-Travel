@@ -25,6 +25,7 @@ body {
     font-style: normal;
     font-size: 3rem;
     color: #000;
+    overflow-x: hidden;
 }
 
 a {
@@ -39,7 +40,6 @@ button {
 
 header {
     width: 100%;
-    /* border-radius: 1.5rem 1.5rem 0 0; */
     left: 0;
     right: 0;
     position: fixed;
@@ -48,16 +48,14 @@ header {
     margin: 1.4rem;
 }
 
-.header {    
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem 0 0.8rem; 
-    /* background: rgba(206, 206, 206, 0.8); */
+    padding: 0 3rem 0 0.8rem;
 }
 
 .navigation {
-    /* display: none; */
     display: block;
     width: 30%;
     height: 100%;
@@ -196,6 +194,15 @@ svg {
 }
 
 
+.header_logo {
+    margin-top: 1rem;
+}
+
+.header_button_logo {
+    cursor: pointer;
+}
+
+
 .music {
     width: 5rem;
     height: 2rem;
@@ -214,6 +221,7 @@ svg {
     width: 100%;
 }
 
+
 .border {
     position: fixed;
     top: 0;
@@ -231,26 +239,11 @@ svg {
     pointer-events: none;
 }
 
+
 main {
     width: 100%;
-    height: 200rem;
     position: relative;
-    /* z-index: 55; */
 }
-
-/* .scroll-y {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 2rem;
-    height: 100%;
-    overflow-y: auto;
-    padding: 2rem;
-    z-index: 133;
-} */
 
 ::-webkit-scrollbar {
     width: 1.5rem;
@@ -273,14 +266,26 @@ main {
 .background {
     width: 90%;
     height: 57.5rem;
-    background: url(../Image/castle_1.png);
+    background: url(../Image/Interesting_places/castle_1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
     margin-top: 7rem;      
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-position: center;
+    background-size: 0% 0%;
+    animation: backgroundExpand 0.5s ease-out forwards;
+}
+
+@keyframes backgroundExpand {
+    0% {
+        background-size: 0% 0%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
 }
 
 .background h2 {
@@ -290,7 +295,23 @@ main {
     font-size: 7rem;
     background: rgba(7, 7, 7, 0.3);
     border-radius: 2rem;
+
+    opacity: 0;
+    transform: scale(0);
+    animation: textAppear 1.5s ease-out forwards;
 }
+
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 
 #section_prologue {
     display: flex;
@@ -300,12 +321,22 @@ main {
 }
 
 .h_name {
-    text-align: center;    
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
 .description {
     text-align: justify;
     margin-top: 1rem;
+
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
 }
 
 .description_indent {
@@ -320,6 +351,7 @@ main {
     color: rgb(81, 81, 254);
 }
 
+
 #section_interesting_places {
     display: flex;
     flex-direction: column;
@@ -331,12 +363,28 @@ main {
     border-radius: 2rem;
     margin: 2rem 2rem 1rem 0;
     float: left;
+    opacity: 0;
+    transform: translateX(-101%);
+    transition: transform 1.5s ease-out;
+}
+
+.image_left_visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .image_right_from_text {
     border-radius: 2rem;
     margin: 2rem 0 1rem 2rem;
     float: right;
+    opacity: 0;
+    transform: translateX(101%);
+    transition: transform 1.5s ease-out;
+}
+
+.image_right_visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .image_big {
@@ -347,13 +395,14 @@ main {
     width: 30%;
 }
 
-#section_hotels, #section_restaurants, #section_kafe_bars {
+
+#section_hotels, #section_restaurants, #section_сafe_bars {
     display: flex;
     flex-direction: column;
     padding: 12rem 8rem 2rem 10rem;
 }
 
-.hotel, .restaurant, .kafe_bar  {
+.hotel, .restaurant, .сafe_bar  {
     text-align: justify;
     margin-top: 5rem;
 }
@@ -374,18 +423,39 @@ main {
     height: 30%;
 }
 
-.hotel_description h3, .restaurant_description h3, .kafe_bar_description h3 {
+.hotel_description h3, .restaurant_description h3, .сafe_bar_description h3 {
     margin-bottom: 2rem;
 }
 
-.hotel_description p, .restaurant_description p, .kafe_bar_description p {
+.hotel_description p, .restaurant_description p, .сafe_bar_description p {
     text-indent: 3rem;
     font-size: 2.5rem;
 }
 
-.restaurant_image, .kafe_bar_image {
+.restaurant_image, .сafe_bar_image {
     width: 33%;
     border-radius: 1.5rem;
     float: right;
     margin: 2rem 0 1rem 2rem;
 }
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 4rem 0;
+    background-color: #e3e3e3;
+    gap: 1rem;
+}
+
+.footer_button {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.footer_image {
+    width: 100%;
+    color: #959595;
+}
+
+
