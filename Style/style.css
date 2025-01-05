@@ -324,7 +324,7 @@ main {
     text-align: center;
 
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .description {
@@ -332,12 +332,12 @@ main {
     margin-top: 1rem;
 
     opacity: 0;
-    transition: opacity 2.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
-.visible {
-    opacity: 1;
-}
+/*.visible {*/
+/*    opacity: 1;*/
+/*}*/
 
 .description_indent {
     text-indent: 3rem;
@@ -365,7 +365,7 @@ main {
     float: left;
     opacity: 0;
     transform: translateX(-101%);
-    transition: transform 1.5s ease-out;
+    transition: transform 1s ease-out;
 }
 
 .image_left_visible {
@@ -379,7 +379,7 @@ main {
     float: right;
     opacity: 0;
     transform: translateX(101%);
-    transition: transform 1.5s ease-out;
+    transition: transform 1s ease-out;
 }
 
 .image_right_visible {
@@ -402,15 +402,29 @@ main {
     padding: 12rem 8rem 2rem 10rem;
 }
 
-.hotel, .restaurant, .сafe_bar  {
+.hotel, .restaurant, .cafe_bar  {
     text-align: justify;
     margin-top: 5rem;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
 }
 
 .hotel_image {
     border-radius: 1.5rem;
     float: left;
     margin: 2rem 2rem 1rem 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 1s ease-out;
+}
+
+.image_visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .width_image_big {
@@ -437,6 +451,23 @@ main {
     border-radius: 1.5rem;
     float: right;
     margin: 2rem 0 1rem 2rem;
+}
+
+.restaurant_image {
+    object-fit: cover;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-out;
+}
+
+.сafe_bar_image {
+    object-fit: cover;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.7s ease-out;
+}
+
+.visible_image {
+    transform: scaleX(1);
 }
 
 .footer_container {

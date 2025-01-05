@@ -13,7 +13,7 @@ export class CafeBarsSection extends HTMLObject {
         CAFE_BARS_CHAPTER_DATA.forEach(chapterData => {
             // let indent = false;
             const div = new Div();
-            div.setClass("сafe_bar");
+            div.setClass("cafe_bar");
 
             const image = new Image(chapterData.image, chapterData.title);
             image.setClass("сafe_bar_image");

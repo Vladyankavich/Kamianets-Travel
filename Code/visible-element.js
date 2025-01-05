@@ -36,6 +36,54 @@ export class VisibleElement {
                 element.classList.add("image_right_visible");
             }
         });
+
+        const hotels = document.querySelectorAll(".hotel");
+        hotels.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add("visible");
+            }
+        });
+
+        const hotelImages = document.querySelectorAll(".hotel_image");
+        hotelImages.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add("image_visible");
+            }
+        });
+
+        const restaurants = document.querySelectorAll(".restaurant");
+        restaurants.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add("visible");
+            }
+        });
+
+        const restaurantImages = document.querySelectorAll(".restaurant_image");
+        restaurantImages.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add("visible_image");
+            }
+        });
+
+        const cafeBars = document.querySelectorAll(".cafe_bar");
+        cafeBars.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add("visible");
+            }
+        });
+
+        const cafeBarsImages = document.querySelectorAll(".сafe_bar_image");
+        cafeBarsImages.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add("visible_image");
+            }
+        });
     }
 
     visibility() {
