@@ -14,6 +14,7 @@ import {RestaurantsSection} from "./restaurants-section.js";
 import {CafeBarsSection} from "./cafe-bars-section.js";
 import {Body} from "./body.js";
 import {FooterContainer} from "./footer-container.js";
+import {ContentAnimator} from "./content-animator.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     const body = new Body();
@@ -32,7 +33,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const restaurantsSection = new RestaurantsSection();
     const cafeBarsSection = new CafeBarsSection();
     const footerContainer = new FooterContainer();
-    
+    const contentAnimator = new ContentAnimator();
+
     headerDiv.setClass("header");
     headerDiv.addChild(mainMenu).addChild(burgerMenu).addChild(logo).addChild(audioplayer);
     header.addChild(headerDiv);
@@ -40,4 +42,6 @@ window.addEventListener("DOMContentLoaded", () => {
     main.addChild(hotelsSection).addChild(restaurantsSection).addChild(cafeBarsSection);
     body.addChild(header).addChild(border).addChild(main).addChild(footerContainer);
     body.create();
+
+    window.addEventListener('scroll', contentAnimator.play);
 });

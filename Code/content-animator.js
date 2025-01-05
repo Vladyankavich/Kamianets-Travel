@@ -1,10 +1,5 @@
-export class VisibleElement {
-    // constructor(className, classList) {
-    //     this.className = className;
-    //     this.classList = classList;
-    // }
-
-    checkVisibility() {
+export class ContentAnimator {
+    play() {
         const hName = document.querySelectorAll(".h_name");
         hName.forEach(element => {
             const rect = element.getBoundingClientRect();
@@ -84,11 +79,5 @@ export class VisibleElement {
                 element.classList.add("visible_image");
             }
         });
-    }
-
-    visibility() {
-        // Слушаем событие прокрутки
-        window.addEventListener('scroll', this.checkVisibility);
-        this.checkVisibility();
     }
 }

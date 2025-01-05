@@ -21,7 +21,7 @@ export class Body extends Tag {
             new Script("./Code/span.js"),
             new Script("./Code/button.js"),
             new Script("./Code/paragraph.js"),
-            new Script("./Code/visible-element.js"),
+            new Script("./Code/content-animator.js"),
             new Script("./Code/navigation.js"),
             new Script("./Code/section.js"),
             new Script("./Code/heading.js"),
